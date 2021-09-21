@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro-Clock</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body id="main">
+    <div class="container">
+      <div class="div-1">
+        <h1>25 + 5 Clock</h1>
+      </div>
+      <div class="div-2">
+        <div>
+          Break Length
+
+          <h2>
+            <i
+              id="left_up_arrow"
+              class="fa fa-arrow-up"
+              style="font-size: 35px"
+            ></i>
+            <p id="break-length">5</p>
+            <i
+              id="left_down_arrow"
+              class="fa fa-arrow-down"
+              style="font-size: 35px"
+            ></i>
+          </h2>
+        </div>
+
+        <div>
+          Session Length
+          <h2>
+            <i
+              id="right_up_arrow"
+              class="fa fa-arrow-up"
+              style="font-size: 35px"
+            ></i>
+            <p id="session-length">25</p>
+            <i
+              id="right_down_arrow"
+              class="fa fa-arrow-down"
+              style="font-size: 35px"
+            ></i>
+          </h2>
+        </div>
+      </div>
+
+      <div class="div-3">
+        <p id="countDownTimer">00:00</p>
+        <button id="start" class="bt-1">Start</button>
+        <button id="stop" class="bt-2">Stop</button>
+        <button id="reset" class="bt-3">Reset</button>
+      </div>
+    </div>
+
+    <audio id="myAudio-1">
+      <source src="session_end.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio id="myAudio-2">
+      <source src="session_start.wav" type="audio/wav" />
+    </audio>
+
+    <audio id="myVoice-1">
+      <source src="session_time_end-voice.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="myVoice-2">
+      <source src="session_time_start-voice.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="main.js"></script>
+  </body>
+</html>
