@@ -15,11 +15,13 @@ var sessionEndVoice = document.getElementById("myVoice-1");
 
 var sessionStartVoice = document.getElementById("myVoice-2");
 
+let leftUpArrow = document.getElementById("left_up_arrow");
+
+let leftDownArrow = document.getElementById("left_down_arrow");
+
 //input control operations
 
-document
-  .getElementById("left_up_arrow")
-  .addEventListener("click", incrementBreakTime);
+leftUpArrow.addEventListener("click", incrementBreakTime);
 
 function incrementBreakTime() {
   // breakTime = breakTime + 1;
@@ -28,9 +30,7 @@ function incrementBreakTime() {
   clearInterval(myVal);
 }
 
-document
-  .getElementById("left_down_arrow")
-  .addEventListener("click", decrementBreakTime);
+leftDownArrow.addEventListener("click", decrementBreakTime);
 
 function decrementBreakTime() {
   clearInterval(myVal);
@@ -38,7 +38,7 @@ function decrementBreakTime() {
     breakTime = Math.ceil(breakTime) - 1;
   }
   document.getElementById("break-length").innerText = `${Math.ceil(breakTime)}`;
- }
+}
 
 document
   .getElementById("right_up_arrow")
