@@ -38,7 +38,7 @@ function decrementBreakTime() {
     breakTime = Math.ceil(breakTime) - 1;
   }
   document.getElementById("break-length").innerText = `${Math.ceil(breakTime)}`;
- }
+}
 
 document
   .getElementById("right_up_arrow")
