@@ -6,6 +6,7 @@ var sessionTime = 25;
 let tempTime = sessionTime;
 
 //adding audio for session start and end
+//adding test comment
 
 var x = document.getElementById("myAudio-1");
 
@@ -15,13 +16,11 @@ var sessionEndVoice = document.getElementById("myVoice-1");
 
 var sessionStartVoice = document.getElementById("myVoice-2");
 
-let leftUpArrow = document.getElementById("left_up_arrow");
-
-let leftDownArrow = document.getElementById("left_down_arrow");
-
 //input control operations
 
-leftUpArrow.addEventListener("click", incrementBreakTime);
+document
+  .getElementById("left_up_arrow")
+  .addEventListener("click", incrementBreakTime);
 
 function incrementBreakTime() {
   // breakTime = breakTime + 1;
@@ -30,7 +29,9 @@ function incrementBreakTime() {
   clearInterval(myVal);
 }
 
-leftDownArrow.addEventListener("click", decrementBreakTime);
+document
+  .getElementById("left_down_arrow")
+  .addEventListener("click", decrementBreakTime);
 
 function decrementBreakTime() {
   clearInterval(myVal);
