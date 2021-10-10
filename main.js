@@ -4,6 +4,7 @@ var counter;
 let breakTime = 5;
 var sessionTime = 25;
 let tempTime = sessionTime;
+let myTestVal = 0;
 
 //adding audio for session start and end
 
@@ -38,7 +39,7 @@ function decrementBreakTime() {
     breakTime = Math.ceil(breakTime) - 1;
   }
   document.getElementById("break-length").innerText = `${Math.ceil(breakTime)}`;
- }
+}
 
 document
   .getElementById("right_up_arrow")
